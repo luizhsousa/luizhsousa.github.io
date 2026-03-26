@@ -106,16 +106,16 @@ h1 em{font-style:italic;color:var(--blue)}
 .spk-inner h2{color:var(--white);margin-bottom:10px}
 .spk-inner h2 em{color:rgba(255,255,255,.45)}
 .spk-sub{font-size:17px;color:rgba(255,255,255,.55);font-weight:300;line-height:1.65;margin-bottom:44px;max-width:540px}
-.spk-photos{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:16px}
-.spk-ph{border-radius:var(--r-lg);overflow:hidden;aspect-ratio:3/4;position:relative;background:rgba(255,255,255,.06)}
-.spk-ph img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block;transition:transform .4s}
+.spk-photos{display:grid;grid-template-columns:1fr 1fr 1fr;gap:3px;align-items:end}
+.spk-ph{overflow:hidden;position:relative;height:520px}
+.spk-ph img{width:100%;height:100%;object-fit:cover;object-position:center bottom;display:block;transition:transform .4s;filter:none}
 .spk-ph:hover img{transform:scale(1.03)}
-.spk-label{position:absolute;bottom:12px;left:12px;right:12px;background:rgba(0,0,0,.5);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border-radius:6px;padding:8px 11px;font-size:12px;color:rgba(255,255,255,.88)}
+.spk-label{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(0,0,0,0.55),transparent);padding:32px 16px 14px;font-size:12px;color:rgba(255,255,255,.9);letter-spacing:.02em}
 
 /* ABOUT */
 #about{background:var(--white)}
 .about-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:72px;align-items:start;margin-top:12px}
-.about-photo{width:100%;border-radius:var(--r-xl);object-fit:cover;object-position:center 15%;display:block;aspect-ratio:3/4;box-shadow:var(--sh-lg)}
+.about-photo{width:100%;object-fit:cover;object-position:center 10%;display:block;aspect-ratio:3/4}
 .about-text p{font-size:16px;line-height:1.75;color:var(--muted);margin-bottom:16px;font-weight:300}
 .about-text p strong{color:var(--text);font-weight:500}
 .ap{display:flex;flex-wrap:wrap;gap:9px;margin-top:24px}
@@ -187,6 +187,7 @@ footer{background:var(--text);color:rgba(255,255,255,.4);padding:40px 5%}
   .services-grid{grid-template-columns:1fr}
   .results-grid{grid-template-columns:1fr 1fr}
   .spk-photos{grid-template-columns:1fr}
+  .spk-ph{height:380px}
   .spk-photos .spk-ph:not(:first-child){display:none}
   .fr{grid-template-columns:1fr}
 }
@@ -377,7 +378,7 @@ footer{background:var(--text);color:rgba(255,255,255,.4);padding:40px 5%}
         <p>Tell me what you're working on — I'll tell you honestly whether I can help and what that looks like. No commitments, no sales pitch, no wasted time.</p>
         <p style="font-size:14px;color:var(--hint);font-weight:300">I work with clients globally and respond within 24 hours.</p>
         <div class="cd">
-          <div class="cd-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:luizhsousa@gmail.com">luizhsousa@gmail.com</a></div>
+          <div class="cd-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="/cdn-cgi/l/email-protection#48243d2132203b273d3b29082f25292124662b2725"><span class="__cf_email__" data-cfemail="58342d3122302b372d2b39183f35393134763b3735">[email&#160;protected]</span></a></div>
           <div class="cd-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg><a href="https://www.linkedin.com/in/luizdesousa" target="_blank">linkedin.com/in/luizdesousa</a></div>
           <div class="cd-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Brazil · Ireland · Global · Remote</span></div>
         </div>
@@ -429,7 +430,7 @@ footer{background:var(--text);color:rgba(255,255,255,.4);padding:40px 5%}
   </div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 const obs=new IntersectionObserver(entries=>{
   entries.forEach(e=>{
     if(e.isIntersecting){
@@ -456,11 +457,4 @@ function doSend(){
   if(!name||!email){alert('Please fill in your name and email.');return;}
   const btn=document.getElementById('sbtn');
   btn.textContent='✓ Sent — I\'ll be in touch soon';
-  btn.style.background='#22c55e';btn.style.pointerEvents='none';
-  setTimeout(()=>{
-    window.location.href=`mailto:luizhsousa@gmail.com?subject=Enquiry – ${type}&body=Hi Luiz,%0A%0A${encodeURIComponent(msg)}%0A%0A– ${encodeURIComponent(name)}`;
-  },500);
-}
-</script>
-</body>
-</html>
+  btn.style.background='#22c55e';btn.style.p
