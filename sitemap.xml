@@ -5,25 +5,67 @@
   <!-- English version -->
   <url>
     <loc>https://luizsousa.com/en/</loc>
-    <lastmod>2026-03-28</lastmod>
+    <lastmod>2026-04-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en"    href="https://luizsousa.com/en/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luizsousa.com/pt-br/"/>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://luizsousa.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="en"      href="https://luizsousa.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR"   href="https://luizsousa.com/pt-br/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://luizsousa.com/en/"/>
   </url>
 
   <!-- Portuguese version -->
   <url>
     <loc>https://luizsousa.com/pt-br/</loc>
-    <lastmod>2026-03-28</lastmod>
+    <lastmod>2026-04-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en"    href="https://luizsousa.com/en/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luizsousa.com/pt-br/"/>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://luizsousa.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="en"      href="https://luizsousa.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR"   href="https://luizsousa.com/pt-br/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://luizsousa.com/en/"/>
+  </url>
+
+  <!-- Blog index EN -->
+  <url>
+    <loc>https://luizsousa.com/blog/</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"      href="https://luizsousa.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR"   href="https://luizsousa.com/blog/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://luizsousa.com/blog/"/>
+  </url>
+
+  <!-- Blog index PT-BR -->
+  <url>
+    <loc>https://luizsousa.com/blog/pt-br/</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"      href="https://luizsousa.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR"   href="https://luizsousa.com/blog/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://luizsousa.com/blog/"/>
+  </url>
+
+  <!-- Blog post EN -->
+  <url>
+    <loc>https://luizsousa.com/blog/from-kitchen-to-google/</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en"      href="https://luizsousa.com/blog/from-kitchen-to-google/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR"   href="https://luizsousa.com/blog/pt-br/da-cozinha-para-o-google/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://luizsousa.com/blog/from-kitchen-to-google/"/>
+  </url>
+
+  <!-- Blog post PT-BR -->
+  <url>
+    <loc>https://luizsousa.com/blog/pt-br/da-cozinha-para-o-google/</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en"      href="https://luizsousa.com/blog/from-kitchen-to-google/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR"   href="https://luizsousa.com/blog/pt-br/da-cozinha-para-o-google/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://luizsousa.com/blog/from-kitchen-to-google/"/>
   </url>
 
 </urlset>
